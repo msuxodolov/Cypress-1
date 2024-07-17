@@ -5,10 +5,11 @@ describe('Библиотека', () => {
   });
 
   it('Позитивный тест - авторизация', () => {
-    cy.get('#mail').type('bropet@mail.ru');
-    cy.get('#pass').type('123');
-    cy.contains('Submit').click();
-    cy.get('.pt-2')
+   // cy.get('#mail').type('bropet@mail.ru');
+   // cy.get('#pass').type('123');
+   cy.login("bropet@mail.ru", "123");
+   cy.contains("Добро пожаловать").should("be.visible", true);
+   cy.get('.pt-2')
   })
 
    it('Негативный тест - пустое поле ввода пароля', () => {

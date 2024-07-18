@@ -50,6 +50,6 @@ describe('Библиотека', () => {
     cy.get('#favorite').click();
     cy.get('form > .ml-2').click();
     cy.get('.card-text');
-    cy.get('[href="book/fd013aeb-44c6-40f4-91d3-1b6d26e9e06d"] > .h-100 > .card-footer > .btn');
+    cy.get('[href="book/8388ecf8-a930-4629-b46f-7e48d8169d8f"] > .h-100 > .card-footer > .btn')
   })
 })
